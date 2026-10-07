@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Microcosm · Native JavaScript game</title><link rel="stylesheet" href="style.css"><script src="game.js" defer></script></head>
+<body><main><a href="../template/index.html">← Portfolio shell</a><h1>Microcosm</h1><p>A compact Osmos-inspired example. Absorb smaller cells, dodge larger ones and click to eject mass. Mouse and touch both work.</p><button id="reset-game" type="button">Restart</button><div class="game"><canvas id="osmos-canvas" width="760" height="460" aria-label="Microcosm game field"></canvas><div class="hud"><span id="hud-mass">Mass: 10.0</span><span id="hud-status" role="status">Ready</span></div></div><p>Move the pointer to steer. Click or tap to eject. Press <kbd>R</kbd> to reset.</p><details><summary>How the code works</summary><p>Each cell keeps a position, velocity and mass. Radius is proportional to the square root of mass. The animation loop advances cells, detects collisions, changes mass and renders circles on a canvas. Pause the tab and the simulation pauses too.</p></details></main></body>
+</html>
+
